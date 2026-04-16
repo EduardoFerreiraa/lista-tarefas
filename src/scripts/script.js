@@ -6,6 +6,13 @@ const body = document.getElementById("body");
 
 changeTheme.addEventListener("click", () => {
   body.classList.toggle("dark");
+
+  const temaAtivo = document.body.classList.contains("dark");
+  if (temaAtivo) {
+    changeTheme.textContent = "Tema Light";
+  } else {
+    changeTheme.textContent = "Tema Dark";
+  }
 });
 
 addTask.addEventListener("click", () => {

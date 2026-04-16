@@ -5,6 +5,7 @@
 }
 
 body {
+  margin: 15px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
@@ -38,7 +39,6 @@ body.dark #tasks li {
 
 .container {
   text-align: center;
-  padding: 25px;
 }
 
 .change-theme {
@@ -91,6 +91,8 @@ input:hover {
 }
 
 #tasks li {
+  max-height: 150px;
+  overflow: auto;
   word-break: break-all;
   border-radius: 5px;
   list-style: none;
@@ -100,4 +102,26 @@ input:hover {
   margin: 5px;
   border: 1px solid rgb(73, 73, 73);
   text-align: left;
+}
+
+@media (width: 360px) {
+  #title {
+    font-size: 1.6rem;
+  }
+
+  input {
+    padding: 7px 5px;
+    margin: 50px 5px 0 0;
+  }
+
+  #button,
+  #theme {
+    font-size: 0.8rem;
+    padding: 8px 5px;
+  }
+
+  #tasks {
+    margin: 30px auto;
+    width: 90%;
+  }
 }
