@@ -8,6 +8,23 @@ body {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
+/* THEME */
+
+body.dark {
+  transition: 0.3s;
+  background: linear-gradient(rgb(12, 12, 12), #131212, rgb(19, 18, 18));
+  height: 100vh;
+}
+
+body.dark h1 {
+  color: white;
+}
+
+body.dark #theme, body.dark #button {
+  color: black;
+  background: white;
+}
+
 .container {
   text-align: center;
   padding: 25px;
@@ -27,9 +44,27 @@ input {
   border-radius: 10px;
 }
 
-button {
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px solid black;
+#button,
+#theme {
+  border: none;
   border-radius: 10px;
-  padding: 7px 10px;
+  padding: 8px 10px;
+  color: white;
+  background-color: black;
+  transition: 0.5s;
 }
+
+#theme {
+  color: white;
+  background-color: black;
+  transition: 0.5s;
+}
+
+#theme:hover, #button:hover {
+  transform: scale(1.15);
+  color: white;
+  background-color: black;
+}
+
+
+
