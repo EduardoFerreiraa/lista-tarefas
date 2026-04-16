@@ -104,20 +104,30 @@ input:hover {
   text-align: left;
 }
 
-@media (width: 360px) {
+@media (width: 320px) OR (width: 360px) {
+  body {
+    margin: 0px;
+  }
+
   #title {
+    padding: 15px;
     font-size: 1.6rem;
   }
 
   input {
-    padding: 7px 5px;
-    margin: 50px 5px 0 0;
+    font-size: 0.7rem;
+    padding: 7px 8px;
+    margin: 50px 2px 0 0;
   }
 
   #button,
   #theme {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     padding: 8px 5px;
+  }
+
+  #theme {
+    margin: 10px;
   }
 
   #tasks {
